@@ -13,4 +13,4 @@
         enabled: yes
     - name: Start the container
       shell : |
-	docker run -itd --name swapgops1 -p 8081:8080 swapgops/webapp:${{DOCKER_TAG}}
+       docker run -itd --name swapgops1 -p 8081:8080 swapgops/webapp:${{DOCKER_TAG}}
