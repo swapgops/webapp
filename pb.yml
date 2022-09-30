@@ -12,6 +12,6 @@
         state: started
         enabled: yes
     - name: Start the container
-	  shell : |
-	   docker login -u swapgops -p ${{dockerHubPwd}}
-	   docker run -itd --name swapgops1 -p 8081:8080 swapgops/webapp:${{DOCKER_TAG}}
+      shell : |
+       docker login -u swapgops -p ${{dockerHubPwd}}
+       docker run -itd --name swapgops1 -p 8081:8080 swapgops/webapp:${{DOCKER_TAG}}
